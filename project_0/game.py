@@ -1,8 +1,11 @@
+"""Игра угадай число"""
+
 from operator import truediv
 import numpy as np
 
-number=np.random.randint(1,100)
+number=np.random.randint(1,100) # загадываем число
 
+# количество попыток
 count=0
 
 while True:
@@ -17,4 +20,4 @@ while True:
 
     else:
         print(f"Вы угадали число! Это число = {number}, за {count} попыток")
-        break
+        break # конец игры выход из цикла
